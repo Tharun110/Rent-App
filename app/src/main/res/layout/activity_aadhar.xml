@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aadhar"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Upload your files"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Aadhar Card or Pan Card or Driving License"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_image_24"
+        android:id="@+id/image_view"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        />
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:text="file_name.png"
+            android:paddingBottom="24dp"
+            android:textColor="@color/white"/>
+
+        <Button
+
+            android:textSize="16sp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/capture_img_btn"
+            android:layout_marginBottom="10dp"
+            android:text="Capture Image"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose_image"
+            android:text="Choose Image"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Next"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -150,7 +150,7 @@ public class Otpactivity extends AppCompatActivity {
                             Boolean isHash = false;
                             String callInfo = "tel:" + phoneNo;
                             Log.d("MainActivity"," Phone No" + callInfo + "Lenght" + phoneNo.length());
-                            Intent intent = new Intent(Otpactivity.this,MainActivity.class);
+                            Intent intent = new Intent(Otpactivity.this,Aadhar.class);
                             startActivity(intent);
                         }
                         else{
