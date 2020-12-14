@@ -9,17 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Otpactivity extends AppCompatActivity {
 
     TextView edtPhoneNo;
     TextView lblinfo;
     Button no1,no2,no3,no4,no5,no6,no7,no8,no9,no0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_otpactivity);
         no1 = (Button) findViewById(R.id.btnOne);
         no2 = (Button) findViewById(R.id.btnTwo);
         no3 = (Button) findViewById(R.id.btnThree);
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void  isValidNumber(String phoneNumber){
-        if(phoneNumber.length() >= 10){
+        if(phoneNumber.length() >= 6){
             //Disable the button...
             Log.d("Ac","" + phoneNumber.length());
             no0.setClickable(false);
@@ -146,12 +145,12 @@ public class MainActivity extends AppCompatActivity {
                     if (phoneNo.trim().equals("")) {
                         lblinfo.setText("Enter your Phone Number");
                     } else {
-                        if(phoneNo.length() == 10){
+                        if(phoneNo.length() == 6){
 
                             Boolean isHash = false;
                             String callInfo = "tel:" + phoneNo;
                             Log.d("MainActivity"," Phone No" + callInfo + "Lenght" + phoneNo.length());
-                            Intent intent = new Intent(MainActivity.this,Otpactivity.class);
+                            Intent intent = new Intent(Otpactivity.this,MainActivity.class);
                             startActivity(intent);
                         }
                         else{
