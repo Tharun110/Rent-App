@@ -30,6 +30,7 @@ public class Aadhar extends AppCompatActivity {
         ImageView mImageView1;
         Button mChooseBtn;
         Button mCaptureBtn;
+        Button nextBtn;
         ImageView mImageview;
         Uri image_uri;
 
@@ -44,7 +45,14 @@ public class Aadhar extends AppCompatActivity {
             mImageView1 = findViewById(R.id.image_view);
             mChooseBtn = findViewById(R.id.choose_image);
 
-
+            nextBtn = findViewById(R.id.next_btn);
+            nextBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Aadhar.this,Profile.class);
+                    startActivity(intent);
+                }
+            });
 
 
             mCaptureBtn.setOnClickListener(new View.OnClickListener() {
