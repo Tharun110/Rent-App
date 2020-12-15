@@ -16,18 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RentApp">
-        <activity android:name=".Success"></activity>
-        <activity android:name=".Profile" />
-        <activity android:name=".Aadhar" />
-        <activity android:name=".Otpactivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Splashscreen">
+
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Splashscreen"/>
+
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Otpactivity" />
+        <activity android:name=".Aadhar" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Success"/>
     </application>
 
 </manifest>
